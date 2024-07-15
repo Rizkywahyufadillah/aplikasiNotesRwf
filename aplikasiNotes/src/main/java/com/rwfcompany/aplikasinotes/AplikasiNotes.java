@@ -66,11 +66,6 @@ public class AplikasiNotes {
                     scanner.next();
                 }
 
-                while (!scanner.hasNextInt()) {
-                    System.out.println("Input harus berupa angka.");
-                    System.out.print("Masukkan nomor catatan yang ingin dihapus: ");
-                    scanner.next();
-                }
                 int idxCatatan = scanner.nextInt();
 
                 databaseStorage.deleteData(idxCatatan);
